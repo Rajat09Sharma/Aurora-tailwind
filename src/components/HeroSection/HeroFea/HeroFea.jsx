@@ -1,6 +1,6 @@
 
 
-export const HeroFea = ({ title}) => {
+export const HeroFea = ({ title }) => {
     return (
         <div className="card bg-white w-11/12 border-2 border-gray-200 rounded-xl py-5 px-4 md:w-1/4">
             <div className="flex justify-between items-center">

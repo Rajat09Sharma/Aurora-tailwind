@@ -3,7 +3,8 @@ import { Footer } from "./components/Footer/Footer"
 import { HerroSection } from "./components/HeroSection/HerroSection"
 import { NavBar } from "./components/Navbar/NavBar"
 import { Price } from "./components/PriceSection/Price"
-import { Promo } from "./components/PromoSection/Promo"
+import { Features } from "./components/PromoSection/Features"
+
 import { Testimonial } from "./components/Testimonial/Testimonial"
 
 
@@ -14,7 +15,7 @@ function App() {
       <NavBar />
       <div className="bg-[#f9fafc]">
         <HerroSection />
-        <Promo />
+        <Features />
         <Price />
         <Testimonial />
         <Faq />

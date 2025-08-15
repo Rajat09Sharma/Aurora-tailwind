@@ -4,13 +4,14 @@ import { GrFormCheckmark } from "react-icons/gr";
 
 export const PricePack = ({ title, price, contnent, active }) => {
 
-    let css = "price-pack py-8 px-6 border border-gray-400 space-y-4 rounded-xl shadow-lg shadow-gray-600 md:w-1/3 ";
-    let btn = "mt-3 py-2 px-12 border border-gray-400 font-medium w-full rounded-xl ";
+    let css = "price-pack py-8 px-6 border border-gray-400 space-y-4 rounded-xl shadow-lg shadow-gray-600 md:w-1/3 transtion duration-150 ease-in hover:shadow-2xs ";
+    let btn = "mt-3 py-2 px-12 border border-gray-400 font-medium w-full rounded-xl cursor-pointer ";
     if (active) {
         css += active;
-        btn += " bg-indigo-600 text-white";
+        btn += " bg-indigo-600 text-white transition duration-150 ease-in hover:bg-indigo-700";
     } else {
         css += " bg-white"
+        btn+=" transition duration-150 ease-in hover:bg-gray-200 hover:text-black"
     }
 
     return (

@@ -16,8 +16,8 @@ export const HerroSection = () => {
                 <p className="text-center text-gray-600">A beautiful, modern SaaS template. Perfect for practicing Tailwind spacing, grid, dark mode, and subtle animations.</p>
 
                 <div className="actions flex  justify-between gap-3.5 mt-2.5">
-                    <button className="flex items-center justify-between border border-gray-300 rounded-2xl py-3 px-5 cursor-pointer bg-indigo-600 text-white font-extralight">Start free <BsArrowRightShort size={20} /></button>
-                    <button className=" border border-gray-300 rounded-2xl py-3 px-5 cursor-pointer font-extralight ">See features</button>
+                    <button className="flex items-center justify-between border border-gray-300 rounded-2xl py-3 px-5 cursor-pointer bg-indigo-600 text-white font-extralight transition duration-150 ease-in hover:bg-indigo-700 ">Start free <BsArrowRightShort size={20} /></button>
+                    <button className=" border border-gray-300 rounded-2xl py-3 px-5 cursor-pointer font-extralight transition duration-150 ease-in hover:bg-gray-200 hover:text-black">See features</button>
                 </div>
             </div>
 

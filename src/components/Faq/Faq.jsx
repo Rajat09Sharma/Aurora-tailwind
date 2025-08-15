@@ -9,12 +9,12 @@ const FAQS = [
 export const Faq = () => {
     return (
         <>
-            <div className="mt-8 py-16 mx-5 md:mx-16">
+            <div id="FAQ" className="mt-8 py-16 mx-5 md:mx-16 md:scroll-mt-28">
                 <h2 className="font-bold text-2xl text-center md:text-4xl">FAQ</h2>
                 <div className="mt-8 space-y-8 md:space-y-0 md:grid md:grid-cols-2 md:mt-14 ">
                     {FAQS.map((faq, index) => {
                         return (
-                            <div key={index} className="border border-gray-300 rounded-xl bg-white py-8 px-6 mx-5 space-y-2.5 md:mb-10">
+                            <div key={index} className="border border-gray-300 rounded-xl bg-white py-8 px-6 space-y-2.5 md:mb-10 md:mx-5">
                                 <h3 className="font-medium text-lg">{faq.question}</h3>
                                 <p className="text-gray-500 ">{faq.answer}</p>
                             </div>

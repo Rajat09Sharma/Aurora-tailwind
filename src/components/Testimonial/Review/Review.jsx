@@ -3,7 +3,7 @@
 export const Review = () => {
     return (
         <>
-            <div className='review py-8 px-6 mx-5 bg-white border border-gray-400 shadow-sm shadow-gray-300 rounded-xl'>
+            <div className='review py-8 px-6 mx-5 bg-white border border-gray-300 shadow-sm shadow-gray-300 rounded-xl'>
                 <div className='flex items-center gap-4'>
                     <div className='size-10 rounded-full bg-gradient-to-bl from-indigo-400 to-blue-400 siz'></div>
                     <div>
