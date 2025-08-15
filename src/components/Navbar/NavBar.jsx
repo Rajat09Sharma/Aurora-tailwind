@@ -1,7 +1,17 @@
 
+import { useState } from "react";
+import { FiArrowRight } from "react-icons/fi";
+
 const NavLinks = ["Features", "Pricing", "Stories", "FAQ"];
 
 export const NavBar = () => {
+
+    const [showLinks, setShowLinks] = useState(false);
+
+    const handleToggler = () => {
+        setShowLinks((prevs) => !prevs);
+    }
+
     return (
         <>
             {/* mobile view */}
@@ -15,13 +25,22 @@ export const NavBar = () => {
                 </div>
                 <div className="right flex justify-between items-center gap-4">
                     <button className="theme text-xs font-bold py-1 px-3 border rounded-2xl border-gray-200 bg-white cursor-pointer">Light</button>
-                    <div className="humburger space-y-0.5 py-3 px-2 border border-gray-200 rounded-xl cursor-pointer md:hidden">
+
+                    <button className="hidden md:flex md:items-center md:gap-1.5 md:bg-indigo-600 md:py-2 md:text-white md:px-4 md:rounded-full md:font-medium md:shadow-md hover:md:shadow-gray-400 md:cursor-pointer">Get started<span><FiArrowRight /></span></button>
+
+                    {showLinks ? <div className="humburger py-3 px-2 text-xl cursor-pointer relative md:hidden" onClick={handleToggler} >
+                        <div className="line h-0.5 w-4 bg-black rotate-45 absolute left-0"></div>
+                        <div className="line h-0.5 w-4  bg-black -rotate-45 absolute left-0"></div>
+                    </div> : <div className="humburger space-y-0.5 py-3 px-2 border border-gray-200 rounded-xl cursor-pointer md:hidden" onClick={handleToggler} >
                         <div className="line h-0.5 w-4 bg-black"></div>
                         <div className="line h-0.5 w-4 bg-black"></div>
                         <div className="line h-0.5 w-4  bg-black"></div>
-                    </div>
+                    </div>}
                 </div>
             </nav>
+            {showLinks && <div className="flex flex-col bg-white top-full left-0 mt-24 w-full space-y-5 pt-3 pb-0 px-4 md:hidden">
+                {NavLinks.map((link, index) => <a key={index} href={`#${link}`} className="text-md text-gray-600 hover:text-violet-500" >{link}</a>)}
+            </div>}
 
         </>
     )
