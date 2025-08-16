@@ -11,28 +11,35 @@ import { Testimonial } from "./components/Testimonial/Testimonial"
 
 function App() {
 
-  const initial = localStorage.getItem("theme") === "true";
+  const initial = localStorage.getItem("theme") || "light";
 
   const [dark, setDark] = useState(initial);
 
   const handleThemeToggle = () => {
     setDark((prev) => {
-      const newTheme = !prev;
-      localStorage.setItem("theme", newTheme); // stores "true" or "false" as string
-      return newTheme;
+      let newTheme;
+      if (prev == "light") {
+        newTheme = "dark";
+        localStorage.setItem("theme", newTheme);
+        return newTheme;
+      } else {
+        newTheme = "light";
+        localStorage.setItem("theme", newTheme);
+        return newTheme;
+      }
     });
   };
-  
+
   useEffect(() => {
 
-    if (dark) {
-      document.documentElement.classList.add("dark"); // apply dark mode globally
+    if (dark == "dark") {
+      document.documentElement.classList.add("dark");
       document.documentElement.classList.add(
         "bg-gradient-to-b",
         "from-slate-900",
         "to-slate-950"
       );
-      document.documentElement.classList.remove("bg-white"); // remove light mode bg if any
+      document.documentElement.classList.remove("bg-white");
     } else {
       document.documentElement.classList.remove("dark");
       document.documentElement.classList.remove(
@@ -43,6 +50,9 @@ function App() {
       document.documentElement.classList.add("bg-white");
     }
   }, [dark]);
+
+  console.log(initial);
+
 
   return (
     <div className={dark == "dark" ? "dark " : ""}>
