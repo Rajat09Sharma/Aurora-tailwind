@@ -31,7 +31,7 @@ export const Footer = () => {
                 </div>
 
             </div>
-            <p className="font-light text-gray-600 md:text-center">© {new Date().getFullYear()} Aurora -by RAJAT</p>
+            <p className="font-light text-gray-600 text-center">© {new Date().getFullYear()} Aurora -by RAJAT</p>
         </div>
     )
 }
