@@ -5,7 +5,7 @@ import { HeroFea } from "./HeroFea/HeroFea";
 
 export const HerroSection = () => {
     return (
-        <div className="mt-12 py-10 md:mt-4">
+        <div className="mt-0 py-16 md:mt-4">
             <div className="main-head flex flex-col items-center py-16 px-6 space-y-4 md:space-y-6  ">
                 <p className="border border-gray-200 rounded-2xl text-sm py-1 px-3 flex gap-2 items-center font-light md:text-md">
                     <PiStarFour />New: AI automations
@@ -13,11 +13,11 @@ export const HerroSection = () => {
 
                 <h1 className="text-3xl w-10/12 text-center font-bold md:text-6xl md:font-extrabold">Design faster with <span className="bg-gradient-to-r from-indigo-600 via-violet-600 to-cyan-600 bg-clip-text text-transparent">Tailwind UI</span></h1>
 
-                <p className="text-center text-gray-600">A beautiful, modern SaaS template. Perfect for practicing Tailwind spacing, grid, dark mode, and subtle animations.</p>
+                <p className="text-center text-gray-600 dark:text-gray-400">A beautiful, modern SaaS template. Perfect for practicing Tailwind spacing, grid, dark mode, and subtle animations.</p>
 
                 <div className="actions flex  justify-between gap-3.5 mt-2.5">
-                    <button className="flex items-center justify-between border border-gray-300 rounded-2xl py-3 px-5 cursor-pointer bg-indigo-600 text-white font-extralight transition duration-150 ease-in hover:bg-indigo-700 shadow-md hover:shadow-gray-400  ">Start free <BsArrowRightShort size={20} /></button>
-                    <button className=" border border-gray-300 rounded-2xl py-3 px-5 cursor-pointer font-extralight transition duration-150 ease-in shadow-md hover:shadow-gray-400  hover:bg-gray-200 hover:text-black">See features</button>
+                    <button className="flex items-center justify-between border border-gray-300 rounded-2xl py-3 px-5 cursor-pointer bg-indigo-600 text-white font-extralight transition duration-150 ease-in hover:bg-indigo-700 shadow-sm hover:shadow-gray-400 dark:border-gray-500 ">Start free <BsArrowRightShort size={20} /></button>
+                    <button className=" border border-gray-300 rounded-2xl py-3 px-5 cursor-pointer font-extralight transition duration-150 ease-in shadow-sm hover:shadow-gray-400  hover:bg-gray-300 hover:text-black dark:border-gray-500">See features</button>
                 </div>
             </div>
 
