@@ -37,10 +37,11 @@ export const NavBar = ({ dark, onDark }) => {
                         <div className="line h-0.5 w-4  bg-black"></div>
                     </div>}
                 </div>
+
+                {showLinks && <div className="flex flex-col bg-white dark:bg-gradient-to-b dark:from-slate-900 dark:to-slate-950 dark:border-slate-800 space-y-5 py-8 px-4 absolute top-10/10 left-0 w-full z-10 md:hidden">
+                    {NavLinks.map((link, index) => <a key={index} href={`#${link}`} className="text-md text-gray-600 hover:text-violet-500 dark:text-gray-400" onClick={handleToggler}  >{link}</a>)}
+                </div>}
             </nav>
-            {showLinks && <div className="flex flex-col bg-white dark:bg-gradient-to-b dark:from-slate-900 dark:to-slate-950 dark:border-slate-800 top-full left-0 w-full space-y-5 pt-24 pb-8 px-4  md:hidden">
-                {NavLinks.map((link, index) => <a key={index} href={`#${link}`} className="text-md text-gray-600 hover:text-violet-500 dark:text-gray-400" >{link}</a>)}
-            </div>}
 
         </>
     )

@@ -9,7 +9,7 @@ import { Wideget } from "./Wideget/Wideget";
 
 export const Features = () => {
     return (
-        <div id="Features" className="flex flex-col justify-center py-6 md:scroll-mt-28 md:mt-14 md:mx-16 md:flex-row md:justify-between">
+        <div id="Features" className="flex flex-col justify-center py-16 scroll-m-19 md:scroll-mt-28 md:mt-14 md:mx-16 md:flex-row md:justify-between">
             <div className="left py-3 px-5 md:w-2/3">
                 <h2 className="font-bold text-2xl md:text-4xl">Everything you need to ship faster</h2>
                 <p className="mt-3 text-gray-600 md:w-3/4 dark:text-gray-400">Practice building a real layout with semantic sections, utility classes, and responsive tweaks.</p>

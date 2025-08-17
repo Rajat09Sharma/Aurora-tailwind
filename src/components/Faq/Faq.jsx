@@ -9,7 +9,7 @@ const FAQS = [
 export const Faq = () => {
     return (
         <>
-            <div id="FAQ" className="mt-8 py-16 mx-5 md:mx-16 md:scroll-mt-28">
+            <div id="FAQ" className="py-16 mx-5 scroll-m-19 md:mx-16 md:scroll-mt-28">
                 <h2 className="font-bold text-2xl text-center md:text-4xl">FAQ</h2>
                 <div className="mt-8 space-y-8 md:space-y-0 md:grid md:grid-cols-2 md:mt-14 ">
                     {FAQS.map((faq, index) => {

@@ -3,8 +3,8 @@ import { Faq } from "./components/Faq/Faq"
 import { Footer } from "./components/Footer/Footer"
 import { HerroSection } from "./components/HeroSection/HerroSection"
 import { NavBar } from "./components/Navbar/NavBar"
-import { Price } from "./components/PriceSection/Price"
-import { Features } from "./components/PromoSection/Features"
+import { Price } from "./components/Price/Price"
+import { Features } from "./components/Features/Features"
 
 import { Testimonial } from "./components/Testimonial/Testimonial"
 
